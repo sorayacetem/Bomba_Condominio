@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "bomba-condominio",
+    "host": "localhost",
+    "dialect": "mariadb",
+    "seederStorageTableName": "sequelize_data"
+  }
+}

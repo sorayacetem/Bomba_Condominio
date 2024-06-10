@@ -1,0 +1,793 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 18px;
+}
+
+/* Menu */
+
+#menu {
+  width: 100vw;
+  height: 8vh;
+  background-color: #fff;
+  padding: 20px 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#menu span {
+  color: #999;
+}
+
+#menu ul {
+  list-style: none;
+  width: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#menu li {
+  margin-right: 10px;
+}
+
+#menu li.center {
+  display: flex;
+  align-items: center;
+}
+
+#menu-principal img,
+#menu-ajustes img,
+#menu-alarme img,
+#menu-sair img {
+  width: 60px;
+}
+
+.icon-container {
+  width: 70px;
+  height: 60px;
+  margin-right: 15px;
+  border: 1px solid #999;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(0.25turn, #ffffff, #f7f7f7, #ebebeb);
+  background-color: rgb(255, 255, 255);
+  /* background-image: linear-gradient(to right, #f3f3f3, #ececec); */
+  background-size: 50% 100%, 50% 100%;
+  background-position: left, right;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+#session {
+  width: 240px;
+  border-left: 2px solid #999999;
+  border-right: 2px solid #999999;
+  padding: 0 20px;
+  text-align: center;
+  color: #999999;
+}
+
+.user-style,
+.time-style {
+  border: 1px solid #999999;
+  padding: 5px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+#logoArterisMenu img {
+  width: 200px;
+  height: auto;
+  max-height: 60%;
+}
+
+#logoCetemMenu img {
+  width: auto;
+  height: 90px;
+  max-height: 60%;
+}
+
+@media (max-width: 1400px) {
+  #menu-principal img,
+  #menu-ajustes img,
+  #menu-alarme img,
+  #menu-sair img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 1297px) {
+  #menu-principal img,
+  #menu-ajustes img,
+  #menu-alarme img,
+  #menu-sair img {
+    width: 40px;
+  }
+}
+
+/* Divisória*/
+
+.divYellow {
+  width: 100vw;
+  height: 1vh;
+  background-color: #fac821;
+  margin: 0;
+  padding: 0;
+}
+
+.divGreen {
+  width: 100vw;
+  height: 0.4vh;
+  background-color: #009265;
+  margin: 0;
+  padding: 0;
+}
+
+/* Página principal */
+
+.container {
+  background-color: #ffffff;
+  width: 98vw;
+  height: 40vh;
+  margin: 20px auto;
+  border: 1px solid #9e9e9e;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.galery {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+}
+
+#title {
+  width: 100%;
+  color: #333;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 20px;
+
+}
+
+.bomba {
+  width: 240px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  margin: 10px 20px ;
+  padding: 0;
+}
+
+.botaoBomba {
+  width: auto;
+  height: auto;
+  background: #fff;
+  border: 1px solid #9e9e9e;
+  border-radius: 15px;
+  z-index: 100;
+  margin-bottom: -10px;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.bomba img {
+  width: 80%;
+  height: auto;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  background-color: #ffffffe0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 2px solid #009265;
+  text-align: center;
+  display: none;
+  z-index: 10000;
+}
+
+.popup2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  background-color: #ffffffe0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 2px solid #009265;
+  text-align: center;
+  display: block;
+  z-index: 10000;
+}
+
+.botaoConfirmacao {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botaoConfirmacao button {
+  width: 40%;
+  height: auto;
+  background-color: #009265;
+  color: #f7f7f7;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding: 4px 20px;
+}
+
+.show {
+  display: block;
+  /* Mostrar quando a classe 'show' é adicionada */
+}
+
+.imgCinza {
+  filter: grayscale(100%) !important;
+}
+
+.imgVerde {
+  filter: hue-rotate(30deg) !important;
+}
+
+.imgVermelho {
+  filter: hue-rotate(241deg) saturate(100%) !important;
+}
+
+.bombaDados {
+  background-color: #fff;
+  border: 1px solid #9e9e9e;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.bombaDados label {
+  width: 86%;
+  height: 30px;
+  font-weight: 700;
+  border: 1px solid #9e9e9e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.bombaDados span {
+  width: 100%;
+  height: auto;
+  font-size: 1em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.bombaDados h4 {
+  font-size: 1em;
+  margin: 10px 0 0 0;
+}
+
+/* .bomba button{
+    width: 84%;
+    height: 50px;
+    margin: 0 0 10px 0;
+    border: 2px solid #999;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 10px;
+    font-size: 1em;
+} */
+
+.Off {
+  background: linear-gradient(
+    to right,
+    RGBA(217, 217, 217, 0.2),
+    RGBA(5, 5, 5, 1),
+    RGBA(15, 15, 15, 1)
+  );
+}
+
+.offRed {
+  background: #ff0000;
+}
+
+.On {
+  background: #009265;
+}
+
+/* Nivel */
+
+.nivel {
+  width: 84%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#barraNivel {
+  background-color: #332f2f;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #9e9e9e;
+  border-radius: 10px;
+}
+
+#nomeNivel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+#nomeNivel span {
+  width: auto;
+  height: auto;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.nivelAlto {
+  background: linear-gradient(to right, #8ff7cf, #aad3f9, #64b1f0);
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.nivelBaixo {
+  background: linear-gradient(to right, #8ff7cf, #aad3f9, #64b1f0);
+  width: 20%;
+  height: 100%;
+  background-color: #009265;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Página dados */
+
+.bombaParametros {
+  background-color: #fff;
+  border: 1px solid #9e9e9e;
+  width: 100%;
+  height: auto;
+  font-size: 1em;
+  margin-top: -10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.bombaParametros label {
+  width: 86%;
+  height: 30px;
+  font-weight: 700;
+  border: 1px solid #9e9e9e;
+  border-radius: 10px;
+  margin: 24px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bombaParametros > div {
+  border: 1px solid #9e9e9e;
+  width: 86%;
+  height: 25px;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.bombaParametros h4 {
+  width: 100%;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 5px 0 0 0;
+}
+
+.horimetro {
+  width: 86%;
+  height: 30px;
+  border: 1px solid #9e9e9e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.reset img {
+  width: 20px;
+  margin: 0 10px 0 0;
+}
+
+.reset {
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dadosHorimetro {
+  width: 90%;
+  border: none;
+  padding-left: 30px;
+}
+
+/* Pagina alarmes */
+
+.content {
+  width: 100%;
+  height: 85%;
+  margin: 20px auto;
+  display: flex;
+}
+
+#alarm {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  font-size: 1.2em;
+}
+
+.alarm_galery {
+  width: auto;
+  height: auto;
+  border: 1px solid #3d3d3d;
+}
+
+.alarm_galery_titulo {
+  background-color: #b1b2b2;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.body_alarm {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  color: #333;
+  font-weight: 600;
+}
+
+.titulo_alarmes {
+  background-color: #b1b2b2;
+  width: 30%;
+  text-align: center;
+}
+
+.titulo_bomba {
+  background-color: #b1b2b2;
+}
+
+.body_alarm table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.body_alarm thead {
+  padding: 0;
+  margin: 0;
+}
+.body_alarm th {
+  border: 1px solid #3d3d3d;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+.body_alarm tr {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.body_alarm td {
+  border: 1px solid #3d3d3d;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: red;
+}
+
+@keyframes piscar {
+  0%, 100% {
+      opacity: 1; /* Visível */
+  }
+  50% {
+      opacity: 0; /* Invisível */
+  }
+}
+
+/* Aplica a animação ao elemento com a classe .piscar */
+.piscar {
+ 
+  animation: piscar 1s infinite; /* 1s duração da animação, repetição infinita */
+}
+
+.alarm_img{
+    width: 30%;
+    height: 84%;
+    background-image: url(../img/alarmes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 30px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:first baseline;
+   
+}
+
+.conexao{
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 180px;
+    margin-left: 0px;
+    
+}
+
+
+.conexao_alarme{
+    width: 180px;
+    height: 40px;
+    border: 1px solid #3d3d3d;
+  
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3d3d3d;
+}
+
+.conexao-medidor{
+    margin-bottom: -60px;
+}
+
+
+
+
+/* Pagina medidor */
+
+.page {
+  width: 100%;
+  height: auto;
+}
+
+.page > h3 {
+  font-size: 1em;
+}
+
+.medicoes_eletricas {
+  width: 100%;
+  height: auto;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.medidor {
+  background-color: #ffffff;
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+  width: 48%;
+}
+
+.titulo_medicoes {
+  background-color: #b1b2b2;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid #3d3d3d;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 10px;
+}
+
+.titulo_medicoes h3 {
+  margin: 0;
+}
+
+.body_medicoes {
+  width: 100%;
+}
+
+.medicoes {
+  width: 98%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.medicoes-collum {
+  display: flex;
+  flex-direction: column;
+}
+
+.me_corrente {
+  width: 48%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #3d3d3d;
+}
+
+.me_tensao {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #3d3d3d;
+}
+
+.me_energiaTotal {
+  width: 48%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid #3d3d3d;
+}
+
+.me_potencia {
+  width: 100%;
+  height: auto;
+
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+}
+
+.dados_me {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dados_me h3 {
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-top: 1px solid #005e42;
+}
+
+.rowlight {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  border-top: 1px solid #3d3d3d;
+}
+
+.rowlight h3 {
+  margin: 0;
+  background-color: #b1b2b2;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1em;
+  padding-top: 10px;
+}
+
+.row h3 {
+  margin: 0;
+  background-color: #b1b2b2;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  font-size: 1em;
+  color: #fff;
+  padding-top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.dados {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.fator_potencia,
+.frequencia {
+  width: 49%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+}
+
+.fator_potencia h3,
+.frequencia h3 {
+  background-color: #b1b2b2;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  min-height: 33px;
+  font-size: 1em;
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}

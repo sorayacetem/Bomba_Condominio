@@ -1,0 +1,30 @@
+{
+  "name": "cetem-base",
+  "version": "1.0.0",
+  "description": "CETEM Aplicação base",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "keywords": [],
+  "author": "CETEM",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "^22.0.0",
+    "sequelize-cli": "^6.6.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "mariadb": "^3.0.2",
+    "modbus-stream": "^0.46.0",
+    "sequelize": "^6.28.0"
+  }
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>Medidor</title>
+</head>
+<body>
+    <div class="divYellow"></div>
+    <div class="divGreen"></div>
+
+    <div class="page">  
+          <div class="medicoes_eletricas">
+
+            <div class="medidor">
+
+                <div class="titulo_medicoes">
+                <h3>MEDIDOR 01</h3>
+                </div>
+    
+                <div class="body_medicoes">
+    
+                    <div class="medicoes">
+
+                        <div class="me_corrente">
+                            
+                            <div class="titulo_medicoes">
+                                <h3>CORRENTE</h3>
+                            </div>
+                            <div class="dados_me">
+                                <div class="row">
+                                    <h3>R</h3>
+                                    <div id="medidor_1_corrente_R" class="dados"> --                               
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <h3>S</h3>
+                                    <div id="medidor_1_corrente_S" class="dados"> --
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <h3 style="border-radius: 0 0 0 4px;">T</h3>
+                                    <div id="medidor_1_corrente_T" class="dados" style="border-radius: 0 0 4px 0;"> --                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="me_energiaTotal">
+                            
+                            <div class="titulo_medicoes">
+                                <h3>ENERGIA TOTAL</h3>
+                            </div>
+                            <div class="dados_me">
+    
+                                <div class="rowlight">
+                                    <h3>ATIVA</h3>
+                                    <div class="dados" id="medidor_1_E_total_ativa">--                                
+                                    </div>
+                                </div>
+    
+                                <div class="rowlight">
+                                    <h3 style="border-radius: 0 0 0 4px;">REATIVA</h3>
+                                    <div class="dados" id="medidor_1_E_total_reativa" style="border-radius: 0 0 4px 0;">--
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+    
+                    <div class="medicoes">
+                        
+                        
+                        
+                        <div class="me_potencia">
+    
+                        <div class="titulo_medicoes">
+                                <h3>POTÊNCIA</h3>
+                            </div>
+                            <div class="dados_me">
+                                <div class="row">
+                                    <h3>ATIVA TOTAL</h3>
+                                    <div class="dados" id="medidor_1_P_ativa_total">--                                
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <h3>REATIVA TOTAL</h3>
+                                    <div class="dados" id="medidor_1_P_reativa_total">--
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <h3 style="border-radius: 0 0 0 4px;">APARENTE TOTAL</h3>
+                                    <div class="dados" id="medidor_1_P_aparente_total" style="border-radius: 0 0 4px 0;">--
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>    
+                    </div>
+    
+                    <div class="medicoes">
+                    
+                        <div class="fator_potencia">                    
+                            <h3>FATOR POTÊNCIA</h3>
+                              <div class="dados" id="medidor_1_f_potencia" style="border-radius: 0 4px 4px 0;">--                                
+                              </div>
+                        </div>
+                        
+                        <div class="frequencia">
+                          <h3>FREQUÊNCIA</h3>
+                              <div class="dados" id="medidor_1_frequencia" style="border-radius: 0 4px 4px 0;">--                                
+                              </div>
+                        </div>
+    
+                    
+                    </div>
+
+                    <div class="medicoes">
+
+                        <div class="me_tensao">
+    
+                            <div class="titulo_medicoes">
+                                    <h3>TENSÃO</h3>
+                                </div>
+                                <div class="dados_me">
+        
+                                    <div class="row">
+                                        <h3>R-S</h3>
+                                        <div class="dados" id="medidor_1_tensao_RS">--                              
+                                        </div>
+                                        <h3>R</h3>
+                                        <div class="dados" id="medidor_1_tensao_R">--                             
+                                        </div>
+                                        
+                                    </div>
+        
+                                    <div class="row">
+                                        <h3>S-T</h3>
+                                        <div class="dados" id="medidor_1_tensao_ST">--                                
+                                        </div>
+                                        <h3>S</h3>
+                                        <div class="dados" id="medidor_1_tensao_S">--
+                                        </div>
+                                        
+                                    </div>
+        
+                                    <div class="row">
+                                        <h3 style="border-radius: 0 0 0 4px;">R-T</h3>
+                                        <div class="dados" id="medidor_1_tensao_RT">--                                
+                                        </div>
+                                        <h3>T</h3>
+                                        <div class="dados" id="medidor_1_tensao_T" style="border-radius: 0 0 4px 0;">--                                
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="medidor">
+
+                <div class="titulo_medicoes">
+                <h3>MEDIDOR 02</h3>
+                </div>
+    
+                <div class="body_medicoes">
+    
+                    <div class="medicoes">
+
+                        <div class="me_corrente">
+                            
+                            <div class="titulo_medicoes">
+                                <h3>CORRENTE</h3>
+                            </div>
+                            <div class="dados_me">
+                                <div class="row">
+                                    <h3>R</h3>
+                                    <div id="medidor_2_corrente_R" class="dados"> --                               
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <h3>S</h3>
+                                    <div id="medidor_2_corrente_S" class="dados"> --
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <h3 style="border-radius: 0 0 0 4px;">T</h3>
+                                    <div id="medidor_2_corrente_T" class="dados" style="border-radius: 0 0 4px 0;"> --                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="me_energiaTotal">
+                            
+                            <div class="titulo_medicoes">
+                                <h3>ENERGIA TOTAL</h3>
+                            </div>
+                            <div class="dados_me">
+    
+                                <div class="rowlight">
+                                    <h3>ATIVA</h3>
+                                    <div class="dados" id="medidor_2_E_total_ativa">--                                
+                                    </div>
+                                </div>
+    
+                                <div class="rowlight">
+                                    <h3 style="border-radius: 0 0 0 4px;">REATIVA</h3>
+                                    <div class="dados" id="medidor_2_E_total_reativa" style="border-radius: 0 0 4px 0;">--
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+    
+                    <div class="medicoes">
+                        
+                        
+                        
+                        <div class="me_potencia">
+    
+                        <div class="titulo_medicoes">
+                                <h3>POTÊNCIA</h3>
+                            </div>
+                            <div class="dados_me">
+                                <div class="row">
+                                    <h3>ATIVA TOTAL</h3>
+                                    <div class="dados" id="medidor_2_P_ativa_total">--                                
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <h3>REATIVA TOTAL</h3>
+                                    <div class="dados" id="medidor_2_P_reativa_total">--
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <h3 style="border-radius: 0 0 0 4px;">APARENTE TOTAL</h3>
+                                    <div class="dados" id="medidor_2_P_aparente_total" style="border-radius: 0 0 4px 0;">--
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>    
+                    </div>
+    
+                    <div class="medicoes">
+                    
+                        <div class="fator_potencia">                    
+                            <h3>FATOR POTÊNCIA</h3>
+                              <div class="dados" id="medidor_2_f_potencia" style="border-radius: 0 4px 4px 0;">--                                
+                              </div>
+                        </div>
+                        
+                        <div class="frequencia">
+                          <h3>FREQUÊNCIA</h3>
+                              <div class="dados" id="medidor_2_frequencia" style="border-radius: 0 4px 4px 0;">--                                
+                              </div>
+                        </div>
+    
+                    
+                    </div>
+
+                    <div class="medicoes">
+
+                        <div class="me_tensao">
+    
+                            <div class="titulo_medicoes">
+                                    <h3>TENSÃO</h3>
+                                </div>
+                                <div class="dados_me">
+        
+                                    <div class="row">
+                                        <h3>R-S</h3>
+                                        <div class="dados" id="medidor_2_tensao_RS">--                              
+                                        </div>
+                                        <h3>R</h3>
+                                        <div class="dados" id="medidor_2_tensao_R">--                             
+                                        </div>
+                                        
+                                    </div>
+        
+                                    <div class="row">
+                                        <h3>S-T</h3>
+                                        <div class="dados" id="medidor_2_tensao_ST">--                                
+                                        </div>
+                                        <h3>S</h3>
+                                        <div class="dados" id="medidor_2_tensao_S">--
+                                        </div>
+                                        
+                                    </div>
+        
+                                    <div class="row">
+                                        <h3 style="border-radius: 0 0 0 4px;">R-T</h3>
+                                        <div class="dados" id="medidor_2_tensao_RT">--                                
+                                        </div>
+                                        <h3>T</h3>
+                                        <div class="dados" id="medidor_2_tensao_T" style="border-radius: 0 0 4px 0;">--                                
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+  
+          
+      </div>
+  
+
+
+      <script src="../script/menu.js"></script>
+      <script type="text/javascript" src="../script/medidor.js"></script>
+</body>
+</html>
